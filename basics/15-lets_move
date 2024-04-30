@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -type f -name '[A-Z]+.*' | mv --target-directory=/tmp/u 
+mv [[ ^[A-Z]+.* ]] /tmp/u/
