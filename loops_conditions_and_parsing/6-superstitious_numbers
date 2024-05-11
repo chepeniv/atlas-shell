@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# nesting a `case` statement in a `while` loop
+# note : only awk is NOT allowed
+
+i=1;
+while [[ $i -lt 21 ]]; do
+	case $i in 
+		4) echo -e "$i\nbad luck from China";;
+		9) echo -e "$i\nbad luck from Japan";;
+		17) echo -e "$i\nbad luck from Italy";;
+		*) echo $i;;
+	esac
+	((i++));
+done
