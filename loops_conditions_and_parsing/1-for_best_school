@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# using `for` to display a string n=10 times
+# note : only awk is NOT allowed
+
+for i in 0..9; do
+	echo $i;
+	i++;
+done
