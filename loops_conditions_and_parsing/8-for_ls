@@ -2,6 +2,8 @@
 # using for to display ls
 # note : only awk is NOT allowed
 
-for item in List; do
+List=`ls`
 
+for item in $List; do
+	echo ${item/[[:digit:]]*\-/}
 done
