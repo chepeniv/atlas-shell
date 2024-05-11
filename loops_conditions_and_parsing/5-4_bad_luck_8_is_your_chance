@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# nesting an `if-elif-else` conditional in a `while` loop
+# note : only awk is NOT allowed
+
+i=1;
+while [[ $i -lt 11 ]]; do
+	if [[ $i == 4 ]]; then
+		echo bad luck;
+	elif [[ $i == 8 ]]; then
+		echo good luck;
+	else
+		echo Best School;
+	fi
+	((i++));
+done
