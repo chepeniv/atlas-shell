@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# using `while` to display a string n times
+# note : only awk is NOT allowed
+
+i=1;
+until [[ $i -gt 10 ]]; do
+	echo Best School;
+	((i++));
+done
