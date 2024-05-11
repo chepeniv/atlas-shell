@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# nesting an `if` in a `while` while loop
+# note : only awk is NOT allowed
+
+i=0;
+while [[ $i -lt 10 ]]; do
+	echo Best School;
+	if [[ $i == 8 ]]; then
+		echo Hi;
+	fi
+	((i++));
+done
