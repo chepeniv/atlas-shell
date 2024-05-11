@@ -5,5 +5,5 @@
 List=$(ls)
 
 for item in $List; do
-	echo "${item#[[:digit:]]*\-}"
+	echo "${item#[^-]*\-}"
 done
