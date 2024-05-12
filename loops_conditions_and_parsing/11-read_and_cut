@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# read contents of file with `while`
+# note : only awk is NOT allowed
+
+
+while read line; do 
+	echo $line | cut -d ':' -f1,3,6 
+done < /etc/passwd
