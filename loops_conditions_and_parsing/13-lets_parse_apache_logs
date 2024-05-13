@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# read and parse a log file with awk
+
+awk
